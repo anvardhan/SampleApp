@@ -1,0 +1,5 @@
+com\freecrm\pages\LoginPage.class
+com\freecrm\pages\HomePage.class
+com\project\base\TestBase.class
+com\project\utilities\TestUtil.class
+com\project\utilities\ExcelUtilities.class
