@@ -8,7 +8,7 @@ public class HelloWorld {
 	public void printHellowWorld()
 	{
 		String helloWorld = "Hello World";
-		System.out.println("Hello World App is: "+helloWorld);
+		System.out.println("Hello World Application name is: "+helloWorld);
 	}
 
 }
