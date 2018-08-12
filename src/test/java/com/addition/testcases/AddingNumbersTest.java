@@ -23,7 +23,7 @@ public class AddingNumbersTest {
 		int num2=30;
 		int sum2num=testUtil.addNumbers(num1,num2);
 		
-		System.out.println("Result of Additions of 2 numbers: "+sum2num);
+		System.out.println("Result of Addition of 2 numbers: "+sum2num);
 					
 	}
 
