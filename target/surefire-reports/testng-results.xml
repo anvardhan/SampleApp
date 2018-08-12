@@ -2,52 +2,52 @@
 <testng-results skipped="0" failed="0" ignored="0" total="4" passed="4">
   <reporter-output>
   </reporter-output>
-  <suite name="Suite" duration-ms="23694" started-at="2018-08-11T20:50:24Z" finished-at="2018-08-11T20:50:48Z">
+  <suite name="Suite" duration-ms="26270" started-at="2018-08-12T01:31:44Z" finished-at="2018-08-12T01:32:10Z">
     <groups>
     </groups>
-    <test name="HelloWorldAppTest" duration-ms="61" started-at="2018-08-11T20:50:24Z" finished-at="2018-08-11T20:50:24Z">
-      <class name="com.helloworld.testcases.HelloWorld">
-        <test-method status="PASS" signature="printHellowWorld()[pri:0, instance:com.helloworld.testcases.HelloWorld@60addb54]" name="printHellowWorld" duration-ms="12" started-at="2018-08-11T20:50:24Z" finished-at="2018-08-11T20:50:24Z">
+    <test name="HelloWorldAppTest" duration-ms="76" started-at="2018-08-12T01:31:44Z" finished-at="2018-08-12T01:31:44Z">
+      <class name="com.helloworld.testcases.HelloWorldTest">
+        <test-method status="PASS" signature="printHellowWorld()[pri:0, instance:com.helloworld.testcases.HelloWorldTest@60addb54]" name="printHellowWorld" duration-ms="25" started-at="2018-08-12T01:31:44Z" finished-at="2018-08-12T01:31:44Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- printHellowWorld -->
-      </class> <!-- com.helloworld.testcases.HelloWorld -->
+      </class> <!-- com.helloworld.testcases.HelloWorldTest -->
     </test> <!-- HelloWorldAppTest -->
-    <test name="AdditionAppTest" duration-ms="4" started-at="2018-08-11T20:50:24Z" finished-at="2018-08-11T20:50:24Z">
-      <class name="com.addition.testcases.AddingNumbers">
-        <test-method status="PASS" signature="setUp()[pri:0, instance:com.addition.testcases.AddingNumbers@7f560810]" name="setUp" is-config="true" duration-ms="1" started-at="2018-08-11T20:50:24Z" finished-at="2018-08-11T20:50:24Z">
+    <test name="AdditionAppTest" duration-ms="6" started-at="2018-08-12T01:31:44Z" finished-at="2018-08-12T01:31:44Z">
+      <class name="com.addition.testcases.AddingNumbersTest">
+        <test-method status="PASS" signature="setUp()[pri:0, instance:com.addition.testcases.AddingNumbersTest@7f560810]" name="setUp" is-config="true" duration-ms="3" started-at="2018-08-12T01:31:44Z" finished-at="2018-08-12T01:31:44Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method status="PASS" signature="add2Numbers()[pri:0, instance:com.addition.testcases.AddingNumbers@7f560810]" name="add2Numbers" duration-ms="1" started-at="2018-08-11T20:50:24Z" finished-at="2018-08-11T20:50:24Z">
+        <test-method status="PASS" signature="add2Numbers()[pri:0, instance:com.addition.testcases.AddingNumbersTest@7f560810]" name="add2Numbers" duration-ms="0" started-at="2018-08-12T01:31:44Z" finished-at="2018-08-12T01:31:44Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- add2Numbers -->
-      </class> <!-- com.addition.testcases.AddingNumbers -->
+      </class> <!-- com.addition.testcases.AddingNumbersTest -->
     </test> <!-- AdditionAppTest -->
-    <test name="FreeCrmAppTest" duration-ms="23572" started-at="2018-08-11T20:50:24Z" finished-at="2018-08-11T20:50:48Z">
+    <test name="FreeCrmAppTest" duration-ms="26127" started-at="2018-08-12T01:31:44Z" finished-at="2018-08-12T01:32:10Z">
       <class name="com.freecrm.testcases.LoginPageTest">
-        <test-method status="PASS" signature="setUp()[pri:0, instance:com.freecrm.testcases.LoginPageTest@2344fc66]" name="setUp" is-config="true" duration-ms="5722" started-at="2018-08-11T20:50:24Z" finished-at="2018-08-11T20:50:30Z">
+        <test-method status="PASS" signature="setUp()[pri:0, instance:com.freecrm.testcases.LoginPageTest@2344fc66]" name="setUp" is-config="true" duration-ms="6171" started-at="2018-08-12T01:31:44Z" finished-at="2018-08-12T01:31:50Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method status="PASS" signature="loginPageTitleTest()[pri:1, instance:com.freecrm.testcases.LoginPageTest@2344fc66]" name="loginPageTitleTest" duration-ms="51" started-at="2018-08-11T20:50:30Z" finished-at="2018-08-11T20:50:30Z">
+        <test-method status="PASS" signature="loginPageTitleTest()[pri:1, instance:com.freecrm.testcases.LoginPageTest@2344fc66]" name="loginPageTitleTest" duration-ms="14" started-at="2018-08-12T01:31:50Z" finished-at="2018-08-12T01:31:50Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- loginPageTitleTest -->
-        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.freecrm.testcases.LoginPageTest@2344fc66]" name="tearDown" is-config="true" duration-ms="797" started-at="2018-08-11T20:50:30Z" finished-at="2018-08-11T20:50:31Z">
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.freecrm.testcases.LoginPageTest@2344fc66]" name="tearDown" is-config="true" duration-ms="706" started-at="2018-08-12T01:31:50Z" finished-at="2018-08-12T01:31:51Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-        <test-method status="PASS" signature="setUp()[pri:0, instance:com.freecrm.testcases.LoginPageTest@2344fc66]" name="setUp" is-config="true" duration-ms="5130" started-at="2018-08-11T20:50:31Z" finished-at="2018-08-11T20:50:36Z">
+        <test-method status="PASS" signature="setUp()[pri:0, instance:com.freecrm.testcases.LoginPageTest@2344fc66]" name="setUp" is-config="true" duration-ms="5228" started-at="2018-08-12T01:31:51Z" finished-at="2018-08-12T01:31:56Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method status="PASS" signature="loginTest()[pri:2, instance:com.freecrm.testcases.LoginPageTest@2344fc66]" name="loginTest" duration-ms="11105" started-at="2018-08-11T20:50:36Z" finished-at="2018-08-11T20:50:47Z">
+        <test-method status="PASS" signature="loginTest()[pri:2, instance:com.freecrm.testcases.LoginPageTest@2344fc66]" name="loginTest" duration-ms="13199" started-at="2018-08-12T01:31:56Z" finished-at="2018-08-12T01:32:09Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- loginTest -->
-        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.freecrm.testcases.LoginPageTest@2344fc66]" name="tearDown" is-config="true" duration-ms="761" started-at="2018-08-11T20:50:47Z" finished-at="2018-08-11T20:50:48Z">
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.freecrm.testcases.LoginPageTest@2344fc66]" name="tearDown" is-config="true" duration-ms="782" started-at="2018-08-12T01:32:09Z" finished-at="2018-08-12T01:32:10Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->

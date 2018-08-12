@@ -2,7 +2,7 @@ package com.helloworld.testcases;
 
 import org.testng.annotations.Test;
 
-public class HelloWorld {
+public class HelloWorldTest {
 	
 	@Test
 	public void printHellowWorld()

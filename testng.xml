@@ -3,12 +3,12 @@
 <suite name="Suite">
   <test thread-count="5" name="HelloWorldAppTest">
     <classes>
-       <class name="com.helloworld.testcases.HelloWorld"/>
+       <class name="com.helloworld.testcases.HelloWorldTest"/>
     </classes>
   </test> <!-- Test -->
    <test thread-count="5" name="AdditionAppTest">
     <classes>
-       <class name="com.addition.testcases.AddingNumbers"/>
+       <class name="com.addition.testcases.AddingNumbersTest"/>
     </classes>
   </test> <!-- Test -->
   <test thread-count="5" name="FreeCrmAppTest">
