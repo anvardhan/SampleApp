@@ -1,16 +1,18 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
-<suite guice-stage="DEVELOPMENT" name="Failed suite [Default suite]">
-  <test thread-count="5" name="Default test(failed)">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [Suite]">
+  <test thread-count="5" name="AdditionAppTest(failed)">
+    <groups>
+      <run>
+        <include name="Smoke"/>
+      </run>
+    </groups>
     <classes>
       <class name="com.freecrm.testcases.LoginPageTest">
         <methods>
-          <include name="setUp"/>
-          <include name="tearDown"/>
-          <include name="loginPageTitleTest"/>
           <include name="loginTest"/>
         </methods>
       </class> <!-- com.freecrm.testcases.LoginPageTest -->
     </classes>
-  </test> <!-- Default test(failed) -->
-</suite> <!-- Failed suite [Default suite] -->
+  </test> <!-- AdditionAppTest(failed) -->
+</suite> <!-- Failed suite [Suite] -->

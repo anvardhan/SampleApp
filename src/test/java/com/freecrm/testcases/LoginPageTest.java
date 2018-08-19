@@ -20,7 +20,7 @@ public class LoginPageTest extends TestBase{
 		super(); 
 	}
 	
-	@BeforeMethod
+	@BeforeMethod(groups= {"Smoke","System","Regression"})
 	public void setUp()
 	{
 		openBrowser();
@@ -29,7 +29,7 @@ public class LoginPageTest extends TestBase{
 		testUtil = new TestUtil();
 	}
 	
-	@Test (priority=1)
+	@Test (priority=9,groups= {"Regression"})
 	public void loginPageTitleTest()
 	{
 		try {
@@ -43,7 +43,7 @@ public class LoginPageTest extends TestBase{
 		}
 	}
 	
-	@Test (priority=2)
+	@Test (priority=10,groups= {"Smoke","System"})
 	public void loginTest() throws InterruptedException
 	{
 		homePage = loginPage.loginToApp(prop.getProperty("username"), prop.getProperty("password"));
@@ -64,7 +64,7 @@ public class LoginPageTest extends TestBase{
 	
 	
 	
-	@AfterMethod
+	@AfterMethod(groups= {"Smoke","System","Regression"})
 	public void tearDown()
 	{
 		closeBrowser();
