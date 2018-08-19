@@ -104,4 +104,12 @@ public class AddingNumbersTest {
 					
 	}
 	
+	@Test(priority=9,groups= {"Smoke"})
+	public void add2NumbersTest9()
+	{
+				
+		System.out.println("This test is only part of Smoke: ");
+					
+	}
+	
 }

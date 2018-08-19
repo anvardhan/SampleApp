@@ -16,8 +16,8 @@
 
 <profiles>
 <profile>
-		<id> System </id>
-		<build>
+<id> SystemAndRegression </id>
+  <build>
     <pluginManagement>
       <plugins>
       	<plugin>
@@ -35,16 +35,14 @@
                </suiteXmlFiles>
               </configuration>
         </plugin>
-       
-      </plugins>
+       </plugins>
     </pluginManagement>
   </build>
-		
-		
 </profile>
+
 <profile>
-		<id> Regression </id>
-		<build>
+<id> System </id>
+ <build>
     <pluginManagement>
       <plugins>
       	<plugin>
@@ -58,20 +56,43 @@
           <version>2.22.0</version>
               <configuration>
                <suiteXmlFiles>
-                <suiteXmlFile>testng_Regression.xml</suiteXmlFile>
+                <suiteXmlFile>testng_system.xml</suiteXmlFile>
                </suiteXmlFiles>
               </configuration>
         </plugin>
-       
-      </plugins>
+       </plugins>
     </pluginManagement>
   </build>
-		
-		
 </profile>
+
 <profile>
-		<id> Smoke </id>
-		<build>
+<id> Regression </id>
+ <build>
+    <pluginManagement>
+      <plugins>
+      	<plugin>
+          <groupId>org.apache.maven.plugins</groupId>
+          <artifactId>maven-compiler-plugin</artifactId>
+          <version>3.8.0</version>
+        </plugin>
+        <plugin>
+          <groupId>org.apache.maven.plugins</groupId>
+          <artifactId>maven-surefire-plugin</artifactId>
+          <version>2.22.0</version>
+              <configuration>
+               <suiteXmlFiles>
+                <suiteXmlFile>testng_regression.xml</suiteXmlFile>
+               </suiteXmlFiles>
+              </configuration>
+        </plugin>
+       </plugins>
+    </pluginManagement>
+  </build>		
+</profile>
+
+<profile>
+<id> Smoke </id>
+ <build>
     <pluginManagement>
       <plugins>
       	<plugin>
@@ -89,18 +110,14 @@
                </suiteXmlFiles>
               </configuration>
         </plugin>
-       
-      </plugins>
+       </plugins>
     </pluginManagement>
   </build>
-		
-		
-</profile>	
+</profile>
+	
 </profiles>
 
- 
- 
-  <dependencies>
+<dependencies>
     
     <!-- https://mvnrepository.com/artifact/org.seleniumhq.selenium/selenium-java -->
 	<dependency>

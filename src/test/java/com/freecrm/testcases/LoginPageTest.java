@@ -29,7 +29,7 @@ public class LoginPageTest extends TestBase{
 		testUtil = new TestUtil();
 	}
 	
-	@Test (priority=9,groups= {"Regression"})
+	@Test (priority=10,groups= {"Regression"})
 	public void loginPageTitleTest()
 	{
 		try {
@@ -43,7 +43,7 @@ public class LoginPageTest extends TestBase{
 		}
 	}
 	
-	@Test (priority=10,groups= {"Smoke","System"})
+	@Test (priority=11,groups= {"Smoke","System"})
 	public void loginTest() throws InterruptedException
 	{
 		homePage = loginPage.loginToApp(prop.getProperty("username"), prop.getProperty("password"));

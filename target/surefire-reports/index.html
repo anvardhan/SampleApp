@@ -49,17 +49,17 @@
               <ul>
                 <li>
                   <a href="#" class="navigator-link " panel-name="test-xml-Suite">
-                    <span>C:\Automation\Selenium\SampleWorkspace\SampleAppTestProject\testng.xml</span>
+                    <span>C:\Automation\Selenium\SampleWorkspace\SampleAppTestProject\testng_smoke.xml</span>
                   </a> <!-- navigator-link  -->
                 </li>
                 <li>
                   <a href="#" class="navigator-link " panel-name="testlist-Suite">
-                    <span class="test-stats">2 tests</span>
+                    <span class="test-stats">1 test</span>
                   </a> <!-- navigator-link  -->
                 </li>
                 <li>
                   <a href="#" class="navigator-link " panel-name="group-Suite">
-                    <span>0 groups</span>
+                    <span>3 groups</span>
                   </a> <!-- navigator-link  -->
                 </li>
                 <li>
@@ -91,7 +91,7 @@
               <div class="suite-section-content">
                 <ul>
                   <li>
-                    <span class="method-stats">3 methods,   3 passed</span>
+                    <span class="method-stats">4 methods,   4 passed</span>
                   </li>
                   <li>
                     <span class="method-list-title passed">Passed methods</span>
@@ -102,12 +102,17 @@
                     <div class="method-list-content passed suite-Suite">
                       <span>
                         <img width="3%" src="passed.png"/>
-                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="com.addition.testcases.AddingNumbersTest" hash-for-method="add2Numbers">add2Numbers</a> <!-- method navigator-link -->
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="com.addition.testcases.AddingNumbersTest" hash-for-method="add2NumbersTest3">add2NumbersTest3</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                       <span>
                         <img width="3%" src="passed.png"/>
-                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="com.freecrm.testcases.LoginPageTest" hash-for-method="loginPageTitleTest">loginPageTitleTest</a> <!-- method navigator-link -->
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="com.addition.testcases.AddingNumbersTest" hash-for-method="add2NumbersTest4">add2NumbersTest4</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="com.addition.testcases.AddingNumbersTest" hash-for-method="add2NumbersTest9">add2NumbersTest9</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                       <span>
@@ -135,13 +140,6 @@
             <div class="main-panel-content rounded-window-bottom">
               <div class="method">
                 <div class="method-content">
-                  <a name="loginPageTitleTest">
-                  </a> <!-- loginPageTitleTest -->
-                  <span class="method-name">loginPageTitleTest</span>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-              <div class="method">
-                <div class="method-content">
                   <a name="loginTest">
                   </a> <!-- loginTest -->
                   <span class="method-name">loginTest</span>
@@ -157,9 +155,23 @@
             <div class="main-panel-content rounded-window-bottom">
               <div class="method">
                 <div class="method-content">
-                  <a name="add2Numbers">
-                  </a> <!-- add2Numbers -->
-                  <span class="method-name">add2Numbers</span>
+                  <a name="add2NumbersTest3">
+                  </a> <!-- add2NumbersTest3 -->
+                  <span class="method-name">add2NumbersTest3</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="add2NumbersTest4">
+                  </a> <!-- add2NumbersTest4 -->
+                  <span class="method-name">add2NumbersTest4</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="add2NumbersTest9">
+                  </a> <!-- add2NumbersTest9 -->
+                  <span class="method-name">add2NumbersTest9</span>
                 </div> <!-- method-content -->
               </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
@@ -167,23 +179,24 @@
         </div> <!-- panel Suite -->
         <div panel-name="test-xml-Suite" class="panel">
           <div class="main-panel-header rounded-window-top">
-            <span class="header-content">C:\Automation\Selenium\SampleWorkspace\SampleAppTestProject\testng.xml</span>
+            <span class="header-content">C:\Automation\Selenium\SampleWorkspace\SampleAppTestProject\testng_smoke.xml</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <pre>
 &lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;
 &lt;!DOCTYPE suite SYSTEM &quot;http://testng.org/testng-1.0.dtd&quot;&gt;
 &lt;suite guice-stage=&quot;DEVELOPMENT&quot; verbose=&quot;0&quot; name=&quot;Suite&quot;&gt;
-  &lt;test thread-count=&quot;5&quot; verbose=&quot;0&quot; name=&quot;AdditionAppTest&quot;&gt;
+  &lt;test thread-count=&quot;5&quot; verbose=&quot;0&quot; name=&quot;SmokeTest&quot;&gt;
+    &lt;groups&gt;
+      &lt;run&gt;
+        &lt;include name=&quot;Smoke&quot;/&gt;
+      &lt;/run&gt;
+    &lt;/groups&gt;
     &lt;classes&gt;
       &lt;class name=&quot;com.addition.testcases.AddingNumbersTest&quot;/&gt;
-    &lt;/classes&gt;
-  &lt;/test&gt; &lt;!-- AdditionAppTest --&gt;
-  &lt;test thread-count=&quot;5&quot; verbose=&quot;0&quot; name=&quot;FreeCrmAppTest&quot;&gt;
-    &lt;classes&gt;
       &lt;class name=&quot;com.freecrm.testcases.LoginPageTest&quot;/&gt;
     &lt;/classes&gt;
-  &lt;/test&gt; &lt;!-- FreeCrmAppTest --&gt;
+  &lt;/test&gt; &lt;!-- SmokeTest --&gt;
 &lt;/suite&gt; &lt;!-- Suite --&gt;
             </pre>
           </div> <!-- main-panel-content rounded-window-bottom -->
@@ -195,10 +208,7 @@
           <div class="main-panel-content rounded-window-bottom">
             <ul>
               <li>
-                <span class="test-name">AdditionAppTest (1 class)</span>
-              </li>
-              <li>
-                <span class="test-name">FreeCrmAppTest (1 class)</span>
+                <span class="test-name">SmokeTest (2 classes)</span>
               </li>
             </ul>
           </div> <!-- main-panel-content rounded-window-bottom -->
@@ -208,6 +218,46 @@
             <span class="header-content">Groups for Suite</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
+            <div class="test-group">
+              <span class="test-group-name">Regression</span>
+              <br/>
+              <div class="method-in-group">
+                <span class="method-in-group-name">add2NumbersTest4</span>
+                <br/>
+              </div> <!-- method-in-group -->
+            </div> <!-- test-group -->
+            <div class="test-group">
+              <span class="test-group-name">Smoke</span>
+              <br/>
+              <div class="method-in-group">
+                <span class="method-in-group-name">add2NumbersTest3</span>
+                <br/>
+              </div> <!-- method-in-group -->
+              <div class="method-in-group">
+                <span class="method-in-group-name">add2NumbersTest4</span>
+                <br/>
+              </div> <!-- method-in-group -->
+              <div class="method-in-group">
+                <span class="method-in-group-name">add2NumbersTest9</span>
+                <br/>
+              </div> <!-- method-in-group -->
+              <div class="method-in-group">
+                <span class="method-in-group-name">loginTest</span>
+                <br/>
+              </div> <!-- method-in-group -->
+            </div> <!-- test-group -->
+            <div class="test-group">
+              <span class="test-group-name">System</span>
+              <br/>
+              <div class="method-in-group">
+                <span class="method-in-group-name">add2NumbersTest3</span>
+                <br/>
+              </div> <!-- method-in-group -->
+              <div class="method-in-group">
+                <span class="method-in-group-name">loginTest</span>
+                <br/>
+              </div> <!-- method-in-group -->
+            </div> <!-- test-group -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
         <div panel-name="times-Suite" class="panel">
@@ -224,24 +274,28 @@ data.addColumn('number', 'Number');
 data.addColumn('string', 'Method');
 data.addColumn('string', 'Class');
 data.addColumn('number', 'Time (ms)');
-data.addRows(3);
+data.addRows(4);
 data.setCell(0, 0, 0)
 data.setCell(0, 1, 'loginTest')
 data.setCell(0, 2, 'com.freecrm.testcases.LoginPageTest')
-data.setCell(0, 3, 9767);
+data.setCell(0, 3, 10173);
 data.setCell(1, 0, 1)
-data.setCell(1, 1, 'loginPageTitleTest')
-data.setCell(1, 2, 'com.freecrm.testcases.LoginPageTest')
-data.setCell(1, 3, 42);
+data.setCell(1, 1, 'add2NumbersTest4')
+data.setCell(1, 2, 'com.addition.testcases.AddingNumbersTest')
+data.setCell(1, 3, 0);
 data.setCell(2, 0, 2)
-data.setCell(2, 1, 'add2Numbers')
+data.setCell(2, 1, 'add2NumbersTest3')
 data.setCell(2, 2, 'com.addition.testcases.AddingNumbersTest')
-data.setCell(2, 3, 1);
+data.setCell(2, 3, 0);
+data.setCell(3, 0, 3)
+data.setCell(3, 1, 'add2NumbersTest9')
+data.setCell(3, 2, 'com.addition.testcases.AddingNumbersTest')
+data.setCell(3, 3, 0);
 window.suiteTableData['Suite']= { tableData: data, tableDiv: 'times-div-Suite'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 9 seconds</span>
+              <span class="suite-total-time">Total running time: 10 seconds</span>
               <div id="times-div-Suite">
               </div> <!-- times-div-Suite -->
             </div> <!-- times-div -->
@@ -256,9 +310,33 @@ return data;
         </div> <!-- panel -->
         <div panel-name="ignored-methods-Suite" class="panel">
           <div class="main-panel-header rounded-window-top">
-            <span class="header-content">0 ignored methods</span>
+            <span class="header-content">7 ignored methods</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
+            <div class="ignored-class-div">
+              <span class="ignored-class-name">com.freecrm.testcases.LoginPageTest</span>
+              <div class="ignored-methods-div">
+                <span class="ignored-method-name">loginPageTitleTest</span>
+                <br/>
+              </div> <!-- ignored-methods-div -->
+            </div> <!-- ignored-class-div -->
+            <div class="ignored-class-div">
+              <span class="ignored-class-name">com.addition.testcases.AddingNumbersTest</span>
+              <div class="ignored-methods-div">
+                <span class="ignored-method-name">add2NumbersTest7</span>
+                <br/>
+                <span class="ignored-method-name">add2NumbersTest8</span>
+                <br/>
+                <span class="ignored-method-name">add2Numbers</span>
+                <br/>
+                <span class="ignored-method-name">add2NumbersTest5</span>
+                <br/>
+                <span class="ignored-method-name">add2NumbersTest6</span>
+                <br/>
+                <span class="ignored-method-name">add2NumbersTest2</span>
+                <br/>
+              </div> <!-- ignored-methods-div -->
+            </div> <!-- ignored-class-div -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
         <div panel-name="chronological-Suite" class="panel">
@@ -273,35 +351,39 @@ return data;
                 <span class="method-start">0 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
-                <span class="method-name">add2Numbers</span>
-                <span class="method-start">5 ms</span>
+                <span class="method-name">add2NumbersTest3</span>
+                <span class="method-start">15 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method before">
+                <span class="method-name">setUp</span>
+                <span class="method-start">15 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">add2NumbersTest4</span>
+                <span class="method-start">15 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method before">
+                <span class="method-name">setUp</span>
+                <span class="method-start">15 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">add2NumbersTest9</span>
+                <span class="method-start">15 ms</span>
               </div> <!-- test-method -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">com.freecrm.testcases.LoginPageTest</div> <!-- chronological-class-name -->
               <div class="configuration-method before">
                 <span class="method-name">setUp</span>
-                <span class="method-start">23 ms</span>
-              </div> <!-- configuration-method before -->
-              <div class="test-method">
-                <span class="method-name">loginPageTitleTest</span>
-                <span class="method-start">4750 ms</span>
-              </div> <!-- test-method -->
-              <div class="configuration-method after">
-                <span class="method-name">tearDown</span>
-                <span class="method-start">4792 ms</span>
-              </div> <!-- configuration-method after -->
-              <div class="configuration-method before">
-                <span class="method-name">setUp</span>
-                <span class="method-start">5441 ms</span>
+                <span class="method-start">15 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">loginTest</span>
-                <span class="method-start">9429 ms</span>
+                <span class="method-start">5028 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">tearDown</span>
-                <span class="method-start">19197 ms</span>
+                <span class="method-start">15201 ms</span>
               </div> <!-- configuration-method after -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
